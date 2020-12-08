@@ -89,7 +89,7 @@ article p{
     color:var(--dark);
   }
   a{
-    color: blue;
+    color: var(--light);
   }
 
   .backHome:hover{
