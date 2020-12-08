@@ -91,12 +91,18 @@ article p{
   a{
     color: blue;
   }
+
+  .backHome:hover{
+    -webkit-box-shadow: 0 8px 6px -6px var(--light);
+       -moz-box-shadow: 0 8px 6px -6px var(--light);
+            box-shadow: 0 8px 6px -6px var(--light);
+  }
 }
 
 .backHome:hover{
-  -webkit-box-shadow: 0 8px 6px -6px black;
-	   -moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
+  -webkit-box-shadow: 0 8px 6px -6px var(--dark);
+	   -moz-box-shadow: 0 8px 6px -6px var(--dark);
+	        box-shadow: 0 8px 6px -6px var(--dark);
 }
 
 footer{
