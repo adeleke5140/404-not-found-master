@@ -87,6 +87,7 @@ footer p{
   font-family: var(--font-tertiary);
   font-size: .8rem;
   position: relative;
+  padding-top: 2em;
   top:2em;
   margin: 0 auto;
 }
