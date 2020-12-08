@@ -6,6 +6,9 @@
   --fw-normal:400;
   --fw-medium:600;
   --fw-bold:700;
+
+  --light:#fff;
+  --dark:#333;
 }
 
 *{
@@ -62,10 +65,10 @@ article p{
 }
 
 .backHome{
-  background:#333;
+  background:var(--dark);
   border:none;
   width:200px;
-  color:#fff;
+  color:var(--light);
   padding:1em 2em;
   font-weight: var(--fw-medium);
   text-transform: uppercase;
@@ -74,10 +77,19 @@ article p{
 
 /* dark mode variant of the button */
 @media (prefers-color-scheme:dark){
-  
+  body{
+    background:var(--dark);
+  }
+  h1,p{
+    color:var(--light)
+  }
+
   .backHome{
-    background: #fff;
-    color:#333;
+    background:var(--light);
+    color:var(--dark);
+  }
+  a{
+    color: blue;
   }
 }
 
