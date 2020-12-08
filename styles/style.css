@@ -80,14 +80,15 @@ article p{
 
 footer{
   display: flex;
-  position: absolute;
-  bottom: 0;
+  width: 100%;
 }
 
 footer p{
   font-family: var(--font-tertiary);
   font-size: .8rem;
-  padding-top: 1.2em;
+  position: relative;
+  top:2em;
+  margin: 0 auto;
 }
 
 .author{
@@ -128,6 +129,8 @@ footer p{
     }
 
     footer{
+      position: absolute;
+      bottom: 0;
       left: 35%;
     } 
 }
