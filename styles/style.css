@@ -1,0 +1,133 @@
+:root{
+  --font-primary:'Space Mono', monospace;
+  --font-secondary:'Inconsolata', monospace;
+  --font-tertiary:'Montserrat', sans-serif;
+
+  --fw-normal:400;
+  --fw-medium:600;
+  --fw-bold:700;
+}
+
+*{
+ box-sizing: border-box;
+ margin: 0px;
+ padding: 0px;
+}
+
+body{
+  font-size: 62.5%;
+}
+
+nav p{
+  font-size: 1.3rem;;
+  font-family: var(--font-secondary);
+  font-weight: var(--fw-bold);
+  width: 100vw;
+  padding-left: 1.5em;
+  padding-top: 1em;
+  margin-bottom: 3em;
+  text-transform: uppercase;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  width: 300px;
+  margin:0 auto;
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  align-content: center;
+  margin-top: 5em;
+  padding-left: 2em;
+}
+
+article > * {
+  text-align: left;
+  font-family: var(--font-primary);
+}
+
+article h1{
+  font-size: 2.7rem;
+}
+
+article p{
+  margin-top: 1.2em;
+  font-size: 1.1rem;
+  
+  margin-bottom: 2em;
+}
+
+.backHome{
+  background:#333;
+  border:none;
+  width:200px;
+  color:#fff;
+  padding:1em 2em;
+  font-weight: var(--fw-medium);
+  text-transform: uppercase;
+  transition: box-shadow 300ms ease-in;
+}
+
+.backHome:hover{
+  -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+footer{
+  display: flex;
+}
+
+footer p{
+  font-family: var(--font-tertiary);
+  font-size: .8rem;
+  padding-top: 1.2em;
+  position: absolute;
+  bottom: 0;
+  left: 3em;
+}
+
+.author{
+  font-family:var(--font-primary);
+}
+
+/* desktop view */
+
+@media screen 
+  and (min-device-width: 767px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    main{
+      display: grid;
+      grid-template-columns: 500px auto;
+      margin-right: 1.5em;
+    }
+
+    .backHome{
+      width: 210px;
+    }
+
+    article{
+      justify-self: end;
+    }
+
+    article h1{
+      width:59%;
+    }
+
+    article p{
+      width: 50%;
+    }
+
+    /* footer p{
+      left: 50%;
+      margin-left: -150px;
+      top: 100%;
+      margin-top: -50px;
+    } */
+}
