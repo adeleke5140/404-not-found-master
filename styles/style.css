@@ -72,6 +72,15 @@ article p{
   transition: box-shadow 300ms ease-in;
 }
 
+/* dark mode variant of the button */
+@media (prefers-color-scheme:dark){
+  
+  .backHome{
+    background: #fff;
+    color:#333;
+  }
+}
+
 .backHome:hover{
   -webkit-box-shadow: 0 8px 6px -6px black;
 	   -moz-box-shadow: 0 8px 6px -6px black;
