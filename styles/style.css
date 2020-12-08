@@ -105,9 +105,13 @@ footer p{
     main{
       display: grid;
       grid-template-columns: 500px auto;
-      margin-right: 1.5em;
+      margin-right: 3em;
+      gap: 6em;
     }
 
+    img{
+      width:400px;
+    }
     .backHome{
       width: 210px;
     }
@@ -124,10 +128,7 @@ footer p{
       width: 50%;
     }
 
-    /* footer p{
-      left: 50%;
-      margin-left: -150px;
-      top: 100%;
-      margin-top: -50px;
-    } */
+    footer p{
+      left: 35%;
+    } 
 }
